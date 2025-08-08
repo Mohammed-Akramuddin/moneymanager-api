@@ -18,7 +18,6 @@ public class CategoryController {
         CategoryDTO cdto=categoryService.saveCategory(categoryDTO);
         return ResponseEntity.ok().body(cdto);
     }
-
     @GetMapping
     public ResponseEntity<List<CategoryDTO>> findAll(){
         List<CategoryDTO>ans=categoryService.getCategories();

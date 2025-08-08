@@ -48,4 +48,10 @@ public class ProfileController {
         return "test successful";
     }
 
+    @GetMapping("/profile")
+    public ResponseEntity<ProfileDTO> getprofile(){
+        ProfileDTO profileDTO=profileService.getPublicProfile(null);
+        return ResponseEntity.ok().body(profileDTO);
+    }
+
 }

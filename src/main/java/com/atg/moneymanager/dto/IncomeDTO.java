@@ -26,5 +26,4 @@ public class IncomeDTO {
     private LocalDateTime updateAt;
     private Long profile_id;
     private Long category_id;
-
 }
