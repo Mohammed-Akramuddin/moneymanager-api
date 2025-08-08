@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
+@Table(name = "category_entity")
 @NoArgsConstructor
 @Entity
 @Builder
